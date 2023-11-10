@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import ReactStars from 'react-stars'
 import { useParams } from 'react-router-dom'
-import { doc, getDoc } from 'firebase/firestore'
-import { db } from '../firebase/firebase'
+import { doc, getDoc  } from 'firebase/firestore'
 import {  Circles } from 'react-loader-spinner'
 import Review from './Review'
+import { db } from '../firebase/firebase'
 
 const Detail = () => {
     const {id} = useParams();
