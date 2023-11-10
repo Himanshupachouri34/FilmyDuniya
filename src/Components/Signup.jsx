@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import { TailSpin } from "react-loader-spinner";
 import { Link } from "react-router-dom";
 import {getAuth, RecaptchaVerifier, signInWithPhoneNumber} from 'firebase/auth'
-import app from '../firebase/firebase'
 import swal from "sweetalert";
 import { addDoc } from "firebase/firestore";
-import { usersRef } from "../firebase/firebase";
 import { useNavigate } from "react-router-dom";
 import bcrypt from 'bcryptjs';
+import app, { usersRef } from "../Database/Firebase";
 const auth = getAuth(app);
 
 const Signup = () => {

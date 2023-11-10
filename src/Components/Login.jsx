@@ -2,10 +2,10 @@ import React, { useContext, useState } from 'react'
 import {Link,  useNavigate} from 'react-router-dom'
 import {TailSpin} from 'react-loader-spinner'
 import { query, getDocs, where  } from 'firebase/firestore'
-import { usersRef } from '../firebase/firebase'
 import { AppState } from '../App'
 import swal from 'sweetalert'
 import bcrypt from 'bcryptjs';
+import { usersRef } from '../Database/Firebase'
 
 
 const Login = () => {

@@ -3,9 +3,9 @@ import ReactStars from 'react-stars'
 import { addDoc, doc, updateDoc, query, where, getDocs } from 'firebase/firestore'
 import { TailSpin, ThreeDots } from 'react-loader-spinner'
 import swal from 'sweetalert'
-import { reviewsRef, db } from '../firebase/firebase'
 import { AppState } from '../App'
 import { useNavigate } from 'react-router-dom'
+import { reviewsRef , db} from '../Database/Firebase'
 
 
 

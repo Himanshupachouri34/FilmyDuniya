@@ -3,7 +3,7 @@ import ReactStars from 'react-stars'
 import {BallTriangle} from 'react-loader-spinner'
 import { Link } from 'react-router-dom'
 import { getDocs } from 'firebase/firestore'
-import { moviesRef } from '../firebase/firebase'
+import { moviesRef } from '../Database/Firebase'
 
 
 

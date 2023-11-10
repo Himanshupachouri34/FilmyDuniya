@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react'
 import { TailSpin} from 'react-loader-spinner'
-import { moviesRef } from '../firebase/firebase'
 import swal from 'sweetalert'
 import { AppState } from '../App'
 import { useNavigate } from 'react-router-dom'
 import { addDoc } from 'firebase/firestore'
+import { moviesRef } from '../Database/Firebase'
 
 const AddMovie = () => {
     const useAppSate = useContext(AppState)

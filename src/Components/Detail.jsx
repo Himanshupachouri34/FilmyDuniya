@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import { doc, getDoc  } from 'firebase/firestore'
 import {  Circles } from 'react-loader-spinner'
 import Review from './Review'
-import { db } from '../firebase/firebase'
+import { db } from '../Database/Firebase'
 
 const Detail = () => {
     const {id} = useParams();
