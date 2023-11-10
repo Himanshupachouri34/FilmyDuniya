@@ -6,7 +6,8 @@ import swal from "sweetalert";
 import { addDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import bcrypt from 'bcryptjs';
-import { usersRef } from "../firebase/Firebase";
+import app, { usersRef } from "../firebase/Firebase";
+
 const auth = getAuth(app);
 
 const Signup = () => {
