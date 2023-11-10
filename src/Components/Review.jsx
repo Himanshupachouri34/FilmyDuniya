@@ -5,7 +5,7 @@ import { TailSpin, ThreeDots } from 'react-loader-spinner'
 import swal from 'sweetalert'
 import { AppState } from '../App'
 import { useNavigate } from 'react-router-dom'
-import { reviewsRef , db} from '../Database/Firebase'
+import { reviewsRef , db} from '../firebase/Firebase'
 
 
 
