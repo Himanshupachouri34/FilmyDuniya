@@ -8,14 +8,21 @@ import { createContext, useState } from 'react'
 import Login from './Components/Login'
 import Singup from './Components/Signup'
 
+
+
+
 const AppState = createContext()
 
 function App() {
+  
   const [login , setLogin] = useState(false)
   const [username, setUsername] = useState('')
 
+ 
+
   return (
     <>
+   
     <AppState.Provider value={{login, username, setLogin, setUsername}}>
     <div>
       <Header/> 
