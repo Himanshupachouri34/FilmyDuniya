@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ReactStars from 'react-stars'
 import { useParams } from 'react-router-dom'
 import { doc, getDoc } from 'firebase/firestore'
-import { db } from '../firebase/Firebase'
+import { db } from '../firebase/firebase'
 import {  Circles } from 'react-loader-spinner'
 import Review from './Review'
 
