@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react'
 import { TailSpin} from 'react-loader-spinner'
-import { addDoc } from 'firebase/firestore'
 import { moviesRef } from '../firebase/firebase'
 import swal from 'sweetalert'
 import { AppState } from '../App'
 import { useNavigate } from 'react-router-dom'
+import { addDoc } from 'firebase/firestore'
 
 const AddMovie = () => {
     const useAppSate = useContext(AppState)
@@ -23,7 +23,7 @@ const AddMovie = () => {
         setLoading(true)
         try {
             if (useAppSate.login) {
-                await addDoc(moviesRef, form);
+                await addDoc(moviesRef, form)
                 swal({
                     title: 'Successfully Added',
                     icon: 'success',
