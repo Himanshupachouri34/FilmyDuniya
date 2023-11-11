@@ -4,7 +4,7 @@ import { addDoc } from "firebase/firestore";
 import swal from 'sweetalert'
 import { AppState } from "../App";
 import { useNavigate } from "react-router-dom";
-import { moviesRef } from "../firebase/Firebase";
+import { moviesRef } from "../firebase/firebase";
 
 const AddMovie = () => {
     const useAppSate = useContext(AppState)

@@ -5,7 +5,7 @@ import { query, getDocs, where  } from 'firebase/firestore'
 import { AppState } from '../App'
 import swal from 'sweetalert'
 import bcrypt from 'bcryptjs';
-import { usersRef } from '../firebase/Firebase'
+import { usersRef } from '../firebase/firebase'
 
 
 const Login = () => {
